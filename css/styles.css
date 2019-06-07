@@ -1,0 +1,32 @@
+#result1{
+  display: none;
+}
+#result2{
+  display: none;
+}
+#result3{
+  display: none;
+}
+#result4{
+  display: none;
+}
+
+
+.jumbotron{
+  text-align: center;
+  background-color: #edeae5;
+  color: #2f3d4c;
+}
+
+body{
+  background-color: #ced9dd;
+}
+
+.btn{
+  background-color: #2f3d4c;
+  color: white;
+}
+
+h3{
+  color: #2f3d4c;
+}

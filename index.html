@@ -11,12 +11,13 @@
 <body>
   <div class="container">
     <div class="jumbotron">
-      <h1>What Programming Language should you learn?</h1>
+      <h1>What Programming Language Should you Learn?</h1>
     </div>
 <div id=survey>
     <h3>Do you have experience programming before?</h3>
     <div class="dropdownexperience">
       <select class="form-control" id="experience">
+        <option value="" disabled selected>Pick an option</option>
         <option value="1">I have never though about learning programming till 15 mins ago.</option>
         <option value="2">I got a quarter of the way through an online course 3 years ago and then never tried again.</option>
         <option value="3">I know a language and can make something functional.</option>
@@ -26,6 +27,7 @@
     <h3>Why do you want to learn a programming language?</h3>
     <div class="dropdownwhy">
       <select class="form-control" id="why">
+        <option value="" disabled selected>Pick an option</option>
         <option value="1">I want to start at start-up!</option>
         <option value="2">Create wicked games!</option>
         <option value="3">Make some sweet web apps!</option>
@@ -35,6 +37,7 @@
     <h3>How do you want to learn the language?</h3>
     <div class="dropdownhow">
       <select class="form-control" id="how">
+        <option value="" disabled selected>Pick an option</option>
         <option value="1">Bootcamp</option>
         <option value="2">Reading a book</option>
         <option value="3">Online</option>
@@ -44,6 +47,7 @@
     <h3>What is your background?</h3>
     <div class="dropdownbackground">
       <select class="form-control" id="background">
+        <option value="" disabled selected>Pick an option</option>
         <option value="1">Liberal Arts</option>
         <option value="2">Professional</option>
         <option value="3">I have been doing whatever I can find</option>
@@ -53,6 +57,7 @@
     <h3>Where do you want to work?</h3>
     <div class="dropdownwork">
       <select class="form-control" id="work">
+        <option value="" disabled selected>Pick an option</option>
         <option value="1">Airbnb</option>
         <option value="2">Microsoft</option>
         <option value="3">Don't care- I just want to do the front end stuff.</option>
@@ -62,9 +67,8 @@
       
       <br>
       <br>
-    <button type="button" class="btn btn-warning" id="submitbtn">Find my match!</button>
+    <button type="button" class="btn" id="submitbtn">Find my match!</button>
   </div>
-</div>
   <div id="result1">
     <h1>Ruby</h1>
     <p> You should learn Ruby! It is great language to start with because it is close to spoken english, flexible and forgiving.  There is also a large community of Ruby developers for you to learn from</p>
