@@ -14,21 +14,25 @@ $(document).ready(function() {
       $("#result2").hide();
       $("#result3").hide();
       $("#result4").hide();
+      $("#missed").hide();
     } else if (total >=9 && total<=12){
       $("#result2").show();
       $("#result1").hide();
       $("#result3").hide();
       $("#result4").hide();
+      $("#missed").hide();
     } else if (total >=13 && total<=17){
       $("#result3").show();
       $("#result2").hide();
       $("#result1").hide();
       $("#result4").hide();
+      $("#missed").hide();
     } else if (total >=18 && total<=20){
       $("#result4").show();
       $("#result2").hide();
       $("#result3").hide();
       $("#result1").hide();
+      $("#missed").hide();
     } else {
       $("#missed").show();
       $("#result1").hide();
