@@ -10,7 +10,9 @@
 #result4{
   display: none;
 }
-
+#missed{
+  display: none;
+}
 
 .jumbotron{
   text-align: center;

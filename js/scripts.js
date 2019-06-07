@@ -9,7 +9,7 @@ $(document).ready(function() {
     var background = parseInt($('select#background').val());
     var work = parseInt($('select#work').val());
     var total = experience + why + how + background + work;
-    if (total <= 8){
+   if (total <= 8){
       $("#result1").show();
       $("#result2").hide();
       $("#result3").hide();
@@ -24,11 +24,17 @@ $(document).ready(function() {
       $("#result2").hide();
       $("#result1").hide();
       $("#result4").hide();
-    } else {
+    } else if (total >=18 && total<=20){
       $("#result4").show();
       $("#result2").hide();
       $("#result3").hide();
       $("#result1").hide();
+    } else {
+      $("#missed").show();
+      $("#result1").hide();
+      $("#result2").hide();
+      $("#result3").hide();
+      $("#result4").hide();
     }
 });
 });
