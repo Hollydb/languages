@@ -1,176 +1,176 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery.js"></script>
-  <script src="js/scripts.js"></script>
-  <title></title>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
+   <title>Language and Pizza</title>
+  </head>
+  <body>
   <div class="container">
     <div class="jumbotron">
       <h1>What Programming Language Should you Learn?</h1>
     </div>
   <div class="row">
-  <div class ="col-md-6">
-  <div id=survey>
-    <div class="form-group">
-      <h3>What is your name?</h3>
-      <input id="name" class="form-control" type="text" placeholder="Name">
-    </div>
+    <div class ="col-md-6">
+      <div id=survey>
+        <div class="form-group">
+        <h3>What is your name?</h3>
+        <input id="name" class="form-control" type="text" placeholder="Name">
+        </div>
     
-    <h3>Do you have experience programming before?</h3>
-    <div class="dropdownexperience">
-      <select class="form-control" id="experience">
-        <option value="" disabled selected>Pick an option</option>
-        <option value="1">I have never though about learning programming till 15 mins ago.</option>
-        <option value="2">I got a quarter of the way through an online course 3 years ago and then never tried again.</option>
-        <option value="3">I know a language and can make something functional.</option>
-        <option value="4">I am an expert in a language and work as an developer.</option>
-      </select>
+        <h3>Do you have experience programming before?</h3>
+        <div class="dropdownexperience">
+          <select class="form-control" id="experience">
+            <option value="" disabled selected>Pick an option</option>
+            <option value="1">I have never though about learning programming till 15 mins ago.</option>
+            <option value="2">I got a quarter of the way through an online course 3 years ago and then never tried again.</option>
+            <option value="3">I know a language and can make something functional.</option>
+            <option value="4">I am an expert in a language and work as an developer.</option>
+          </select>
+        </div>
+        <h3>Why do you want to learn a programming language?</h3>
+        <div class="dropdownwhy">
+          <select class="form-control" id="why">
+            <option value="" disabled selected>Pick an option</option>
+            <option value="1">I want to start a start-up!</option>
+            <option value="2">Create wicked games!</option>
+            <option value="3">Make some sweet web apps!</option>
+            <option value="4">I keep hearing about this big data thing...</option>
+          </select>
+        </div>
+        <h3>How do you want to learn the language?</h3>
+        <div class="dropdownhow">
+          <select class="form-control" id="how">
+            <option value="" disabled selected>Pick an option</option>
+            <option value="1">Bootcamp</option>
+            <option value="2">Reading a book</option>
+            <option value="3">Online</option>
+            <option value="4">With a mentor</option>
+          </select>
+        </div>
+        <h3>What is your background?</h3>
+        <div class="dropdownbackground">
+          <select class="form-control" id="background">
+            <option value="" disabled selected>Pick an option</option>
+            <option value="1">Liberal Arts</option>
+            <option value="2">Professional</option>
+            <option value="3">I have been doing whatever I can find</option>
+            <option value="4">Acedemics</option>
+          </select>
+        </div>
+        <h3>Where do you want to work?</h3>
+        <div class="dropdownwork">
+          <select class="form-control" id="work">
+            <option value="" disabled selected>Pick an option</option>
+            <option value="1">Airbnb</option>
+            <option value="2">Microsoft</option>
+            <option value="3">Don't care- I just want to do the front end stuff.</option>
+            <option value="4">Spotify</option>
+          </select>
+        </div>
+        <br>
+        <br>
+        <button type="button" class="btn" id="submitbtn">Find my match!</button>
+      </div>
     </div>
-    <h3>Why do you want to learn a programming language?</h3>
-    <div class="dropdownwhy">
-      <select class="form-control" id="why">
-        <option value="" disabled selected>Pick an option</option>
-        <option value="1">I want to start a start-up!</option>
-        <option value="2">Create wicked games!</option>
-        <option value="3">Make some sweet web apps!</option>
-        <option value="4">I keep hearing about this big data thing...</option>
-      </select>
+    <br>
+    <div class="col-md-6">
+      <h2 id= "outputname"></h2>
+      <div id="result1">
+        <h1>you should learn Ruby!</h1>
+        <p>It is great language to start with because it is close to spoken english, flexible and forgiving.  There is also a large community of Ruby developers for you to learn from</p>
+        <p> To learn more <a href=http://www.bestprogramminglanguagefor.me/why-learn-ruby>Click here!</a></p>
+      </div>
+      <div id="result2">
+        <h1>you should learn C#!</h1>
+        <p>C# was desigend to be simple and easy to use with a large community of developers to learn from.</p>
+        <p> To learn more <a href=http://www.bestprogramminglanguagefor.me/why-learn-c-sharp>Click here!</a></p>
+      </div>
+      <div id="result3">
+        <h1>you should learn Javascript!</h1>
+        <p>Maybe people start with Javascript because you are start coding right fron your browser.  It is mainly used for front end development </p>
+        <p> To learn more <a href=http://www.bestprogramminglanguagefor.me/why-learn-javascript>Click here!</a></p>
+      </div>
+      <div id="result4">
+        <h1>you should lear Python!</h1>
+        <p>Python reads like English and handles a lot of complexity for you.  It is often used to create desktop and web apps, data mining and scienfif computing</p>
+        <p>To learn more <a href=http://www.bestprogramminglanguagefor.me/why-learn-python>Click here!</a></p>
+      </div>
+      <div id="missed">
+        <h1>You have missed a question</h1>
+        <p>Please go back and answer all the questions.</p>
+      </div>
     </div>
-    <h3>How do you want to learn the language?</h3>
-    <div class="dropdownhow">
-      <select class="form-control" id="how">
-        <option value="" disabled selected>Pick an option</option>
-        <option value="1">Bootcamp</option>
-        <option value="2">Reading a book</option>
-        <option value="3">Online</option>
-        <option value="4">With a mentor</option>
-      </select>
-    </div>
-    <h3>What is your background?</h3>
-    <div class="dropdownbackground">
-      <select class="form-control" id="background">
-        <option value="" disabled selected>Pick an option</option>
-        <option value="1">Liberal Arts</option>
-        <option value="2">Professional</option>
-        <option value="3">I have been doing whatever I can find</option>
-        <option value="4">Acedemics</option>
-      </select>
-    </div>
-    <h3>Where do you want to work?</h3>
-    <div class="dropdownwork">
-      <select class="form-control" id="work">
-        <option value="" disabled selected>Pick an option</option>
-        <option value="1">Airbnb</option>
-        <option value="2">Microsoft</option>
-        <option value="3">Don't care- I just want to do the front end stuff.</option>
-        <option value="4">Spotify</option>
-      </select>
-    </div>
-      
-      <br>
-      <br>
-    <button type="button" class="btn" id="submitbtn">Find my match!</button>
-  </div>
-  </div>
-  <br>
-  <div class="col-md-6">
-    <h2 id= "outputname"></h2>
-  <div id="result1">
-    <h1>you should learn Ruby!</h1>
-    <p>It is great language to start with because it is close to spoken english, flexible and forgiving.  There is also a large community of Ruby developers for you to learn from</p>
-     <p> To learn more <a href=http://www.bestprogramminglanguagefor.me/why-learn-ruby>Click here!</a></p>
-  </div>
-  <div id="result2">
-    <h1>you should learn C#!</h1>
-    <p>C# was desigend to be simple and easy to use with a large community of developers to learn from.</p>
-     <p> To learn more <a href=http://www.bestprogramminglanguagefor.me/why-learn-c-sharp>Click here!</a></p>
-  </div>
-  <div id="result3">
-    <h1>you should learn Javascript!</h1>
-    <p>Maybe people start with Javascript because you are start coding right fron your browser.  It is mainly used for front end development </p>
-    <p> To learn more <a href=http://www.bestprogramminglanguagefor.me/why-learn-javascript>Click here!</a></p>
-  </div>
-  <div id="result4">
-    <h1>you should lear Python!</h1>
-    <p>Python reads like English and handles a lot of complexity for you.  It is often used to create desktop and web apps, data mining and scienfif computing</p>
-     <p> To learn more <a href=http://www.bestprogramminglanguagefor.me/why-learn-python>Click here!</a></p>
-  </div>
-  <div id="missed">
-    <h1>You have missed a question</h1>
-    <p>Please go back and answer all the questions.</p>
-  </div>
-  </div>
   </div>
   <br>
   <br>
   <h4>Now that you have decided to learn to program you are going to need a lot of pizza to get you through the learning stage,  but you will probably not make the big buck for a while. Enter the price for each size of pizza to determine the best value (price per square inch of pizza).
   </h4>
- 
   <div id="pizzamath">
-  <div class= "row">
-    <div class= "col-md-6">
-    <div class="form-group">
-      <h3>10 inch</h3>
-      <div class="row">
-      <div class="col-md-1">$</div>
-      <div class="col-md-11">
-      <input id="ten" class="form-control" type="text" placeholder="Price for 10 inch Pizza">
-      </div>
-      </div>
-    </div>
-    
-    <div class="form-group">
-      <h3>12 inch</h3>
-       <div class="row">
-      <div class="col-md-1">$</div>
-      <div class="col-md-11">
-      <input id="twelve" class="form-control" type="text" placeholder="Price for 12 inch Pizza">
-    </div>
-    </div>
-    </div>
-    <div class="form-group">
-      <h3>14 inch</h3>
-        <div class="row">
-      <div class="col-md-1">$</div>
-      <div class="col-md-11">
-      <input id="fourteen" class="form-control" type="text" placeholder="Price for 14 inch Pizza">
-    </div>
-    </div>
-    </div>
-    <div class="form-group row">
-    <div class="col-sm-2">Crust?</div>
-    <div class="col-sm-10">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="crust">
-        <label class="form-check-label" for="gridCheck1">
+    <div class= "row">
+      <div class= "col-md-6">
+        <div class="form-group">
+        <h3>10 inch</h3>
+          <div class="row">
+            <div class="col-md-1">$
+            </div>
+            <div class="col-md-11">
+              <input id="ten" class="form-control" type="text" placeholder="Price for 10 inch Pizza">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <h3>12 inch</h3>
+          <div class="row">
+            <div class="col-md-1">$
+            </div>
+            <div class="col-md-11">
+              <input id="twelve" class="form-control" type="text" placeholder="Price for 12 inch Pizza">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+        <h3>14 inch</h3>
+          <div class="row">
+            <div class="col-md-1">$
+            </div>
+            <div class="col-md-11">
+              <input id="fourteen" class="form-control" type="text" placeholder="Price for 14 inch Pizza">
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-2">Crust?
+          </div>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="crust">
+              <label class="form-check-label" for="gridCheck1">
           Check this box if you do not eat the crust (and crust will not be taken into consideration in the calculation)
-        </label>
+              </label>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <button type="button" class="btn" id="btnpizza">Pizza Time!</button>
+    </div>
+    <div class="col-md-6">
+      <div id="result10">
+        <h1>The 10 inch pizza is the best value.</h1>
+      </div>
+      <div id="result12">
+        <h1>The 12 inch pizza is the best value.</h1>
+      </div>
+      <div id="result14">
+        <h1>The 14 inch pizza is the best value.</h1>
       </div>
     </div>
   </div>
-    <br>
-    <br>
-    <button type="button" class="btn" id="btnpizza">Pizza Time!</button>
-  </div>
- <div class="col-md-6">  <div id="result10">
-    <h1>The 10 inch pizza is the best value.</h1>
-  </div>
-  <div id="result12">
-    <h1>The 12 inch pizza is the best value.</h1>
-  </div>
-  <div id="result14">
-    <h1>The 14 inch pizza is the best value.</h1>
   </div>
   </div>
-  
-  
-</div>
-</div>
-</div>
-</body>
+  </body>
 </html>
