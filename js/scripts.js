@@ -2,13 +2,16 @@ $(document).ready(function() {
   console.log("Jquery is loaded");
   $("#submitbtn").click(function(event){
   event.preventDefault()
-
+    var name = $('input#name').val();
     var experience = parseInt($('select#experience').val());
     var why = parseInt($('select#why').val());
     var how = parseInt($('select#how').val());
     var background = parseInt($('select#background').val());
     var work = parseInt($('select#work').val());
     var total = experience + why + how + background + work;
+    
+    $('#outputname').text(name + ", ");
+   
    if (total <= 8){
       $("#result1").show();
       $("#result2").hide();
