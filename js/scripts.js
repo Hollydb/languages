@@ -63,34 +63,34 @@ $(document).ready(function() {
     console.log(tennocrust);
     console.log(twelvenocrust);
     console.log(fourteennocrust);
-    if ($('#crust').is(":checked") && tennocrust < twelvenocrust && tennocrust < fourteennocrust){
-      $("#result10").show();
-      $("#result12").hide();
-      $("#result14").hide();
-    } else if ($('#crust').is(":checked") && twelvenocrust < tennocrust && twelvenocrust < fourteennocrust){
-      $("#result10").show();
-      $("#result12").hide();
-      $("#result14").hide();
-    } else if ($('#crust').is(":checked") && fourteennocrust < tennocrust && fourteennocrust < twelvenocrust){
-      $("#result10").show();
-      $("#result12").hide();
-      $("#result14").hide();
-    } else if (valueten < valuetwelve && valueten < valuefourteen){
-      $("#result10").show();
-      $("#result12").hide();
-      $("#result14").hide();
-      $("#missed").hide();
-    } else if (valuetwelve < valueten && valuetwelve < valuefourteen){
-      $("#result12").show();
-      $("#result10").hide();
-      $("#result14").hide();
-      $("#missed").hide();
-    } else if (valuefourteen < valuetwelve && valuefourteen < valueten){
-      $("#result14").show();
-      $("#result12").hide();
-      $("#result10").hide();
-      $("#missed").hide();
-    }
+    if ($('#crust').prop('checked') && tennocrust < twelvenocrust && tennocrust < fourteennocrust){
+        $("#result10").show();
+        $("#result12").hide();
+        $("#result14").hide();
+      } else if ($('#crust').prop('checked') && twelvenocrust < tennocrust && twelvenocrust < fourteennocrust){
+        $("#result10").show();
+        $("#result12").hide();
+        $("#result14").hide();
+      } else if ($('#crust').prop('checked') && fourteennocrust < tennocrust && fourteennocrust < twelvenocrust){
+        $("#result10").show();
+        $("#result12").hide();
+        $("#result14").hide();
+      } else if (valueten < valuetwelve && valueten < valuefourteen){
+        $("#result10").show();
+        $("#result12").hide();
+        $("#result14").hide();
+        $("#missed").hide();
+      } else if (valuetwelve < valueten && valuetwelve < valuefourteen){
+        $("#result12").show();
+        $("#result10").hide();
+        $("#result14").hide();
+        $("#missed").hide();
+      } else if (valuefourteen < valuetwelve && valuefourteen < valueten){
+        $("#result14").show();
+        $("#result12").hide();
+        $("#result10").hide();
+        $("#missed").hide();
+      }
 
 });
 });
