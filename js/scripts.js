@@ -54,10 +54,28 @@ $(document).ready(function() {
     var valueten = (priceten/314.16);
     var valuetwelve = (pricetwelve/452.39);
     var valuefourteen = (pricefourteen/615.75);
+    var tennocrust = (priceten/201.06);
+    var twelvenocrust = (pricetwelve/314.16);
+    var fourteennocrust = (pricefourteen/452.39);
     console.log (valueten);
     console.log(valuetwelve);
     console.log(valuefourteen);
-    if (valueten < valuetwelve && valueten < valuefourteen){
+    console.log(tennocrust);
+    console.log(twelvenocrust);
+    console.log(fourteennocrust);
+    if ($('#crust').is(":checked") && tennocrust < twelvenocrust && tennocrust < fourteennocrust){
+      $("#result10").show();
+      $("#result12").hide();
+      $("#result14").hide();
+    } else if ($('#crust').is(":checked") && twelvenocrust < tennocrust && twelvenocrust < fourteennocrust){
+      $("#result10").show();
+      $("#result12").hide();
+      $("#result14").hide();
+    } else if ($('#crust').is(":checked") && fourteennocrust < tennocrust && fourteennocrust < twelvenocrust){
+      $("#result10").show();
+      $("#result12").hide();
+      $("#result14").hide();
+    } else if (valueten < valuetwelve && valueten < valuefourteen){
       $("#result10").show();
       $("#result12").hide();
       $("#result14").hide();
@@ -73,7 +91,6 @@ $(document).ready(function() {
       $("#result10").hide();
       $("#missed").hide();
     }
-    
 
 });
 });

@@ -1,6 +1,6 @@
 #_{What programming language should you learn?}_
 
-#### _{This is a html page that will tell you which programming language you should learn. It utilizes Html, css, bootstrac, Javascript and Jquery.}_
+#### _{This is a html page that will tell you which programming language you should learn and how much pizza to order. It utilizes Html, css, bootstrac, Javascript and Jquery.}_
 
 ### By _**{Holly DeBelser}**_
 
