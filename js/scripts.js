@@ -48,29 +48,32 @@ $(document).ready(function() {
 
   $("button#btnpizza").click(function(event){
   event.preventDefault();
-    var priceten = parseInt($('input#ten').val());
+    var priceten = parseFloat($('input#ten').val());
     var pricetwelve = parseFloat($('input#twelve').val());
     var pricefourteen = parseFloat($('input#fourteen').val());
     var valueten = (priceten/314.16);
     var valuetwelve = (pricetwelve/452.39);
     var valuefourteen = (pricefourteen/615.75);
     console.log (valueten);
-    if (valueten < valuetwelve || valueten < valuefourteen){
+    console.log(valuetwelve);
+    console.log(valuefourteen);
+    if (valueten < valuetwelve && valueten < valuefourteen){
       $("#result10").show();
       $("#result12").hide();
       $("#result14").hide();
       $("#missed").hide();
-    } else if (valuetwelve < valueten || valuetwelve < valuefourteen){
+    } else if (valuetwelve < valueten && valuetwelve < valuefourteen){
       $("#result12").show();
       $("#result10").hide();
       $("#result14").hide();
       $("#missed").hide();
-    } if (valuefourteen < valuetwelve || valuefourteen < valuefen){
+    } else if (valuefourteen < valuetwelve && valuefourteen < valueten){
       $("#result14").show();
       $("#result12").hide();
       $("#result10").hide();
       $("#missed").hide();
     }
+    
 
 });
 });
