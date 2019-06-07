@@ -13,6 +13,15 @@
 #missed{
   display: none;
 }
+#result10{
+  display: none;
+}
+#result12{
+  display: none;
+}
+#result14{
+  display: none;
+}
 
 .jumbotron{
   text-align: center;
